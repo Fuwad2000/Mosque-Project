@@ -1,0 +1,20 @@
+.quotes {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: green;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: white;
+  white-space: nowrap;
+  padding: 10px 6rem;
+  letter-spacing: 0.5px;
+  animation: move-rtl 20s linear infinite;
+}
+@keyframes move-rtl {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
+}
