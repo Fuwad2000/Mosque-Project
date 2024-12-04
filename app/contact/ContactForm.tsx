@@ -100,7 +100,7 @@ const ContactForm: React.FC = () => {
     <form
       onSubmit={handleSubmit}
       name="message-form"
-      className="bg-white border border-solid shadow-md shadow-gray-400  grid gap-y-4 py-10 px-5 text-xl lg:gap-y-7"
+      className="bg-white border border-solid shadow-md shadow-gray-400   grid gap-y-4 py-10 px-5 text-xl lg:gap-y-7 "
     >
       <h1 className="text-green-950 font-bold lg:text-3xl">SEND A MESSAGE</h1>
       {renderTextField("name", "YOUR NAME")}
