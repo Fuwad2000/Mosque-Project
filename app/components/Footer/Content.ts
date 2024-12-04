@@ -3,7 +3,7 @@ export const content = {
     heading: "Donate",
     buttonLabel: ["Donate Here", "Registration", "Rate Us", "Guidelines"],
     buttonLink: [
-      "#",
+      "/contact",
       "https://docs.google.com/forms/d/e/1FAIpQLSc03xm2u2NjUYMZVjqzVofAAJ6Wl1NVNoCcJXH4H5UDb8GSAQ/viewform",
       "https://docs.google.com/forms/d/e/1FAIpQLSc03xm2u2NjUYMZVjqzVofAAJ6Wl1NVNoCcJXH4H5UDb8GSAQ/viewform",
       "https://media.wix.com/ugd/ac236e_e456346571704976bd71b2128e85be71.pdf",
