@@ -1,26 +1,26 @@
-import ReachOut from "./ReachOut";
-import Logo from "/Eagleslogo.png";
-import Image from "next/image";
-function Footer() {
+import { Button, Typography } from "@mui/material";
+import Link from "next/link";
+import React from "react";
+import { content } from "./Content";
+import FooterMini from "./FooterMini";
+import FooterButtons from "./FooterButtons";
+import FooterContactUs from "./FooterContactUs";
+import FooterFollowUs from "./FooterFollowUs";
+
+const Footer = () => {
   return (
-    <>
-      <ReachOut />
-      <hr></hr>
-      <div className="bg-slate-100 w-full justify-center gap-2 py-2 ">
-        <h5 className="text-xs text-center">&copy; 2024 Yaseen Mussalh</h5>
-        <span className="separator hidden ">•</span>
-        <div className="flex text-xs place-content-center gap-x-2">
-          <h5>Designed by: Eagles Development Team</h5>
-          <Image
-            src="/images/Eagleslogo.png"
-            alt="Logo"
-            width={200}
-            height={100}
-            className="w-5 h-5"
-          />
+    <div className="bg-sectionone-bg bg-cover bg-center text-neutral-100">
+      <div className=" grid justify-center  py-10 ">
+        <div className="grid justify-self-center  w-11/12  xl:w-10/12 md:grid-cols-2">
+          <FooterButtons />
+          <FooterContactUs />
+          <FooterFollowUs />
         </div>
       </div>
-    </>
+      <hr></hr>
+      <FooterMini />
+    </div>
   );
-}
+};
+
 export default Footer;

@@ -5,7 +5,7 @@ import styles from "./annoucement.module.css";
 
 const Annoucement = () => {
   return (
-    <div className="bg-slate-100 flex justify-start gap-3 overflow-hidden">
+    <div className="bg-zinc-900 flex justify-start gap-3 overflow-hidden">
       {AnnoucementContent.map((annouce, index) => (
         <Typography variant="h1" key={index} className={styles.quotes}>
           {annouce} {" • "}

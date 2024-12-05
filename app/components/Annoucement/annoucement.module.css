@@ -2,19 +2,19 @@
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  color: green;
+  color: white;
   -webkit-text-stroke-width: 0.1px;
-  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-color: green;
   white-space: nowrap;
-  padding: 10px 6rem;
+  padding: 10px 18rem;
   letter-spacing: 0.5px;
-  animation: move-rtl 20s linear infinite;
+  animation: move-rtl 23s linear infinite;
 }
 @keyframes move-rtl {
   0% {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(-400%);
+    transform: translateX(-450%);
   }
 }

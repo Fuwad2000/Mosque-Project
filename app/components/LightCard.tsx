@@ -16,11 +16,11 @@ interface Props {
 }
 export default function CardStructure({ cardContent }: Props) {
   return (
-    <Card className="w-full">
+    <Card className="grid w-full relative">
       <CardMedia
         component="img"
         alt="green iguana"
-        height="140"
+        className="h-[140px]"
         image={cardContent.imgs}
       />
       <CardContent>
@@ -29,9 +29,9 @@ export default function CardStructure({ cardContent }: Props) {
           {cardContent.content}
         </Typography>
       </CardContent>
-      <CardActions>
+      <CardActions className="items-end">
         {cardContent.buttonContent.map((btn, index) => (
-          <Button size="small" key={index}>
+          <Button size="small" key={index} sx={{ color: "green" }}>
             {btn}
           </Button>
         ))}
