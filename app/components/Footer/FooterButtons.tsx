@@ -7,7 +7,7 @@ const FooterButtons = () => {
       {content.donate.buttonLabel.map((label, index) => (
         <div
           key={index}
-          className="h-[60px] w-[150px]  text-center font-bold bg-neutral-900 shadow-md shadow-white flex items-center justify-center hover:shadow-green-300 md:w-[170px]"
+          className="h-[60px] w-[150px]  text-center font-bold bg-neutral-900 shadow-md shadow-white flex items-center justify-center hover:shadow-green-main md:w-[170px]"
         >
           <Link href={content.donate.buttonLink[index]}>{label}</Link>
           <span className="material-icons pr-1 text-black-800">

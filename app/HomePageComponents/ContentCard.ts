@@ -1,6 +1,6 @@
 export const contentCard = [
   {
-    imgs: "https://prayersconnect.com/api/image-resize/eyJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjYxNiwiaGVpZ2h0IjozOTJ9fSwidXJsIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL3BsYWNlcy9BQWNYcjhycmNzWHpqRHo0RG9FbTc2d2NQc3kzakZMVWRyQjRnSHBCS2dvTE82V2dWNWpiTWlScXpoWUptUWJ1UWd3TUxUYlMzV3lkdzdmOVJEdlpoa2hwanVTU2FwblBqUDAycXFJPXMxNjAwLXc0NjQwIn0=",
+    imgs: "/images/quranClass.webp",
     title: "Quran Programs for Boys and Girls 📖",
     content:
       "We are excited to offer dedicated Quran programs designed to meet the unique learning needs of boys and girls. These programs aim to provide a focused, comfortable, and enriching environment for children to deepen their understanding of the Quran and its teachings.",

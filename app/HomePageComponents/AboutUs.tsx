@@ -4,7 +4,7 @@ import React from "react";
 const AboutUs = () => {
   return (
     <div className="bg-about-bg">
-      <div className="w-11/12 mx-auto py-10 text-white space-y-5">
+      <div className="w-11/12 mx-auto text-white py-10 space-y-5">
         <Typography className="font-bold text-5xl">Who We Are! </Typography>
         <Typography className="font-bold leading-loose ">
           The Peel Islamic Cultural Center (PICC) is a non-profit organization
