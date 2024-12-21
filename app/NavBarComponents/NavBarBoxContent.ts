@@ -7,6 +7,7 @@ export const BoxContent = [
 
   {
     title: "Prayer Time Table",
+    link: "/prayer/timetable",
     DropDownContent: [
       "Weekly Iqama Schedule",
       "Iqama Timings: First Half of the Year",
@@ -16,24 +17,17 @@ export const BoxContent = [
 
   {
     title: "Events",
+    link: "/events",
     DropDownContent: [
       "Basketball Program for Youth",
       "BBQ Family Event",
-      "Martial Art Program for Youth & Adults",
+      "Special Days Of The Year",
     ],
+    Link: ["/events/basketball", "/events/bbqevent", "/events/specialdays"],
   },
   {
     title: "Service",
-    DropDownContent: [
-      "Community Services",
-      "Separate Quran programs for boys and girls",
-      "Daily prayers with Quran and Hadith lessons",
-      "Regular Dawah, Tabligh, and Taleem sessions",
-      "Weekly Friday sermon with pre-Khutba Dars",
-      "Part-time Hifz program for boys (Mon-Fri)",
-      "Monthly talks by renowned scholars",
-      "Matrimonial and youth counseling services",
-    ],
+    link: "/services",
   },
   { title: "Donate", link: "/donate" },
   { title: "Contact", link: "/contact" },

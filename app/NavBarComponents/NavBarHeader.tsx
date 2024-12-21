@@ -9,7 +9,7 @@ interface HeaderProps {
 }
 
 const Header = ({ isDrawerOpen, handleButtonClick }: HeaderProps) => (
-  <div className="flex items-center justify-between p-5  w-full  md:px-10 xl:px-8">
+  <div className="flex items-center justify-between p-5  w-full  md:px-10  lg:w-11/12 mx-auto lg:px-0 xl:w-10/12 xl:px-16 ">
     <Link href="/">
       <Image
         src="/images/Ylogo.png"

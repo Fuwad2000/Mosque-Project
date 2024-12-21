@@ -45,6 +45,7 @@ const NavBarDrawer = ({ isDrawerOpen, handleButtonClick }: Props) => {
                   color: "green",
                 }}
                 variant="text"
+                href={content.link}
                 onClick={() => handleDropDownAction(index)}
               >
                 {content.title}
@@ -62,7 +63,7 @@ const NavBarDrawer = ({ isDrawerOpen, handleButtonClick }: Props) => {
                   ? content.DropDownContent.map((dropContent, index) => (
                       <div key={index} className="px-6 py-2">
                         <Link
-                          href="#"
+                          href={content.Link ? content.Link[index] : "#"}
                           className="text-gray-500 text-sm w-full border-solid hover:text-green-900"
                         >
                           {isDropDownOpen ? dropContent : ""}

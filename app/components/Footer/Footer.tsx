@@ -10,8 +10,8 @@ import FooterFollowUs from "./FooterFollowUs";
 const Footer = () => {
   return (
     <div className="bg-sectionone-bg bg-cover bg-center text-neutral-100">
-      <div className=" grid justify-center  py-10 ">
-        <div className="grid justify-self-center  w-11/12  xl:w-10/12 md:grid-cols-2">
+      <div className=" grid justify-center py-10 ">
+        <div className="grid justify-self-center  w-11/12  md:grid-cols-2 xl:w-full xl:justify-self-stretch">
           <FooterButtons />
           <FooterContactUs />
           <FooterFollowUs />
