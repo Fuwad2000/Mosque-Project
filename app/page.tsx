@@ -5,6 +5,7 @@ import CardContent from "./HomePageComponents/CardContent";
 import ReachOut from "./components/Footer/Footer";
 import DailyPrayerTables from "./components/Prayer/DailyPrayer";
 import AboutUs from "./HomePageComponents/AboutUs";
+import Database from "./components/Database/Database";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <DailyPrayerTables />
       <AboutUs />
       <CardContent />
+      <Database/>
     </>
   );
 }
