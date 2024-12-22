@@ -5,6 +5,7 @@ import CardContent from "./HomePageComponents/CardContent";
 
 import DailyPrayerTables from "./components/Prayer/DailyPrayer";
 import AboutUs from "./HomePageComponents/AboutUs";
+import Database from "./components/Database/Database";
 
 export default function Home() {
   return (
