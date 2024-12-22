@@ -2,7 +2,7 @@ import React from "react";
 import { GallerySection } from "./Content";
 const GalleryAbout = () => {
   return (
-    <div className="space-y-5 md:w-9/12 md:mx-auto">
+    <div className={`space-y-5 md:w-9/12 md:mx-auto`}>
       {GallerySection.map((item, index) => (
         <div key={index} className="flex justify-between">
           {item.map((imgs, index) => (

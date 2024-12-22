@@ -8,14 +8,12 @@ import AboutUs from "./HomePageComponents/AboutUs";
 
 export default function Home() {
   return (
-    <div className="bg-soft-form-gradient xl:pb-10 2xl:pb-20">
-      <div className="xl:shadow-inner xl:shadow-gray-500 xl:mx-auto  xl:w-9/12  2xl:w-8/12">
-        <Gallery />
-        <Annoucement />
-        <DailyPrayerTables />
-        <AboutUs />
-        <CardContent />
-      </div>
+    <div className="">
+      <Gallery />
+      <Annoucement />
+      <DailyPrayerTables />
+      <AboutUs />
+      <CardContent />
     </div>
   );
 }

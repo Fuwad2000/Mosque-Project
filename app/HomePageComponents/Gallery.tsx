@@ -17,7 +17,7 @@ const Gallery = () => {
             alt="Logo"
             width={200}
             height={100}
-            className="w-full h-80 md:h-[600px] lg:h-[600px]"
+            className="w-full h-80 md:h-[600px] lg:h-[600px] xl:h-[700px]"
           />
         ))}
       </Carousel>

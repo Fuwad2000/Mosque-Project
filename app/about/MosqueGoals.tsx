@@ -7,6 +7,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import styles from "./about.module.css";
 
 const MosqueGoals = () => {
   return (
@@ -14,7 +15,7 @@ const MosqueGoals = () => {
       {MosqueGoalsContent.map((item, index) => (
         <div
           key={index}
-          className=" text-center   h-full border border-green-main shadow-md shadow-green-main"
+          className={`text-center   h-full border border-green-main shadow-md shadow-green-main ${styles.appearBoxes} `}
         >
           <div className="bg-green-main grid items-center w-14 h-14 mx-auto -translate-y-1/2 z-10 rounded-full">
             <span className="material-icons text-white text-xl">
