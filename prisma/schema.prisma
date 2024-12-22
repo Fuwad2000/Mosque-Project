@@ -1,0 +1,32 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model prayer_periods {
+  start_date     DateTime         @id @db.Date
+  end_date       DateTime         @db.Date
+  prayer_timings prayer_timings[]
+}
+
+model prayer_timings {
+  id                       Int                        @id @default(autoincrement())
+  prayer_period_start_date DateTime                   @db.Date
+  prayer_name              prayer_timings_prayer_name
+  time                     DateTime                   @db.Time(0)
+  prayer_periods           prayer_periods             @relation(fields: [prayer_period_start_date], references: [start_date], onDelete: Cascade, onUpdate: NoAction, map: "prayer_timings_ibfk_1")
+
+  @@index([prayer_period_start_date], map: "prayer_period_start_date")
+}
+
+enum prayer_timings_prayer_name {
+  Fajr
+  Dhuhr
+  Asr
+  Maghrib
+  Isha
+}
