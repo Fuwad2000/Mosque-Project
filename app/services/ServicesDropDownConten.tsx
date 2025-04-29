@@ -7,8 +7,13 @@ interface Props {
 }
 const ServicesDropDownContent = ({ index, dropDownState }: Props) => {
   return dropDownState ? (
-    <div className="shadow-inner shadow-gray-300 grid md:h-80">
-      <img src={ContentCardServices[index].img} className="h-[180px] w-full" />
+    <div
+      className="shadow-inner shadow-gray-300 grid md:h-80"
+      data-aos="zoom-in-left"
+      data-aos-duration="1000"
+      data-aos-easing="linear"
+    >
+      <img src={ContentCardServices[index].img} className="h-[200px] w-full" />
       <Typography className="px-2 py-5 text-gray-500">
         {ContentCardServices[index].content}
       </Typography>

@@ -12,7 +12,7 @@ const NavBar = () => {
   };
 
   return (
-    <>
+    <div className="shadow-sm shadow-gray-300">
       <Header
         isDrawerOpen={isDrawerOpen}
         handleButtonClick={handleButtonClick}
@@ -21,8 +21,7 @@ const NavBar = () => {
         isDrawerOpen={isDrawerOpen}
         handleButtonClick={handleButtonClick}
       />
-      <NavBarLarge />
-    </>
+    </div>
   );
 };
 

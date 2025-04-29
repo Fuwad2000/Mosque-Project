@@ -1,5 +1,5 @@
 "use client";
-import * as React from "react";
+import React, { useEffect } from "react";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -7,6 +7,8 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import EventInfo from "./EventInfo";
+import Aos from "aos";
+import "aos/dist/aos.css";
 interface Props {
   cardContent: {
     imgs: string;
@@ -18,8 +20,17 @@ interface Props {
 }
 const events = ["Venue: ", "Date: ", "Attendies: "];
 export default function CardStructure({ cardContent }: Props) {
+  useEffect(() => {
+    Aos.init({});
+  }, []);
   return (
-    <Card className="grid w-full relative shadow-md shadow-gray-500 h-full">
+    <Card
+      className="grid w-full relative shadow-md shadow-gray-500 h-full"
+      data-aos="fade-up"
+      data-aos-duration="1200"
+      data-aos-delay="5"
+      data-aos-easing="linear"
+    >
       <CardMedia
         component="img"
         alt="green iguana"

@@ -33,10 +33,14 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 export default function DailyPrayerTables() {
   return (
-    <div className="grid gap-y-6 w-11/12 mx-auto my-5 md:grid-cols-2 gap-3">
+    <div className="grid gap-y-6 mx-auto my-5 md:grid-cols-2 gap-5">
       {PrayerContent.map((prayer, index) => (
-        <TableContainer component={Paper} key={index} className="md:h-max">
-          <Table aria-label="customized table">
+        <TableContainer
+          component={Paper}
+          key={index}
+          className="md:h-max overflow-x-auto"
+        >
+          <Table aria-label="customized table overflow-x-auto">
             <TableHead>
               <TableRow>
                 <StyledTableCell align="left">{prayer.type}</StyledTableCell>

@@ -16,7 +16,7 @@ interface Props {
 }
 export default function CardStructure({ cardContent }: Props) {
   return (
-    <Card className="grid w-full relative shadow-md shadow-gray-500">
+    <Card className="grid w-full bg-inherit relative shadow-md shadow-gray-500">
       <CardMedia
         component="img"
         alt="green iguana"

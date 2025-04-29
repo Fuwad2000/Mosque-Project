@@ -18,3 +18,24 @@ export const ContactCardContent = [
     ],
   },
 ];
+export const FormContent = [
+  {
+    id: "name",
+    label: "YOUR NAME",
+  },
+  {
+    id: "email",
+    label: "EMAIL",
+    type: "email",
+  },
+  {
+    id: "subject",
+    label: "SUBJECT",
+  },
+  {
+    id: "message",
+    label: "ENTER YOUR MESSAGE",
+    multiline: true,
+    rows: 5,
+  },
+];

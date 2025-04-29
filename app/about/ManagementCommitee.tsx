@@ -1,4 +1,5 @@
-import * as React from "react";
+"use client";
+
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import Divider from "@mui/material/Divider";
@@ -7,9 +8,15 @@ import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import { ManagementComitte } from "./Content";
+
 export default function ManagementCommitee() {
   return (
-    <div className="space-y-5 ">
+    <div
+      className="space-y-5 "
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-easing="linear"
+    >
       <Typography className="font-bold text-green-main md:text-xl lg:2xl  text-center uppercase">
         Management Committee
       </Typography>

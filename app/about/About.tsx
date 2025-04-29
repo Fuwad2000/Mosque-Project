@@ -9,7 +9,7 @@ const About = () => {
       <PageIntro
         title={AboutIntroContent.title}
         brief={AboutIntroContent.brief.map((brief, index) => (
-          <React.Fragment>
+          <React.Fragment key={index}>
             {brief}
             <br />
           </React.Fragment>

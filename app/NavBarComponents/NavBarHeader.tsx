@@ -1,27 +1,21 @@
 import React from "react";
-import Image from "next/image";
+
 import { IconButton } from "@mui/material";
 import { Menu, Close as CloseIcon } from "@mui/icons-material";
-import Link from "next/link";
+
 import NavBarName from "./NavBarName";
+import NavBarAddress from "./NavBarAddress";
+import NavBarIcon from "./NavBarIcon";
+import NavBarLarge from "./NavBarLarge";
 interface HeaderProps {
   isDrawerOpen: boolean;
   handleButtonClick: () => void;
 }
 
 const Header = ({ isDrawerOpen, handleButtonClick }: HeaderProps) => (
-  <div className="flex items-center justify-between p-5  w-full  md:px-10  lg:w-full lg:px-0 ">
-    <Link href="/">
-      <Image
-        src="/images/Ylogo.png"
-        alt="Logo"
-        width={200}
-        height={100}
-        className="w-12 h-12 xl:w-20 xl:h-20"
-      />
-    </Link>
-
-    <IconButton onClick={handleButtonClick} className="lg:hidden">
+  <div className=" flex items-center justify-between p-5  w-full  md:px-5   xl:justify-start gap-0  2xl:w-10/12 2xl:mx-auto 3xl:w-9/12">
+    <NavBarIcon />
+    <IconButton className="xl:hidden" onClick={handleButtonClick}>
       {isDrawerOpen ? (
         <CloseIcon
           sx={{ fontSize: "2.5rem", fontWeight: "bold", color: "green" }}
@@ -30,8 +24,8 @@ const Header = ({ isDrawerOpen, handleButtonClick }: HeaderProps) => (
         <Menu sx={{ fontSize: "2.5rem", fontWeight: "bold", color: "green" }} />
       )}
     </IconButton>
-    <div className="hidden lg:flex">
-      <NavBarName />
+    <div className="hidden xl:grid   2xl:ml-auto ">
+      <NavBarLarge />
     </div>
   </div>
 );

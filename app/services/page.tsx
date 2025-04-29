@@ -3,12 +3,11 @@ import { ContentCardServices } from "./ContentCard";
 import { ServiceIntroContent } from "./ContentCard";
 import ServicesTitleStructure from "./ServicesTitleStructure";
 
-import ServiceIntro from "./ServiceIntro";
 import PageIntro from "../components/PageIntro";
 const page = () => {
   return (
-    <div className="py-10">
-      <div className="w-11/12 py-5 px-2 shadow-inner shadow-gray-400 mx-auto md:px-3 xl:w-9/12 xl:px-5 xl:pt-7 xl:pb-20 2xl:w-8/12">
+    <div className="py-10 2xl:px-7">
+      <div className="w-11/12 py-5 px-2 shadow-inner shadow-gray-400 mx-auto md:px-3 xl:w-9/12 xl:px-5 xl:pt-7 xl:pb-20 2xl:w-10/12">
         <PageIntro
           title={ServiceIntroContent.title}
           brief={[ServiceIntroContent.brief]}

@@ -3,7 +3,7 @@ import { content } from "./Content";
 import Link from "next/link";
 const FooterButtons = () => {
   return (
-    <div className="grid  grid-cols-2  md:grid-cols-4 gap-y-5 md:justify-around md:col-span-2 ">
+    <div className="grid  grid-cols-2  md:grid-cols-4 gap-y-5 md:justify-around md:col-span-2  xl:flex xl:justify-between ">
       {content.donate.buttonLabel.map((label, index) => (
         <div
           key={index}

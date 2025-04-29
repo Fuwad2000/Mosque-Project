@@ -5,7 +5,7 @@ import { Typography } from "@mui/material";
 
 const FooterFollowUs = () => {
   return (
-    <div className="">
+    <div className="xl:ml-20 2xl:ml-36 3xl:ml-52">
       <Typography variant="h6" className="py-3 font-bold">
         {content.followUs.heading}
       </Typography>

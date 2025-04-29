@@ -1,7 +1,10 @@
-import * as React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 interface Props {
   items: { heading: string; subHeadings: string[]; value: string[] };
@@ -9,8 +12,16 @@ interface Props {
 }
 
 export default function CardStructure({ items, index }: Props) {
+  useEffect(() => {
+    Aos.init({});
+  }, []);
   return (
-    <Card className="shadow-md shadow-gray-400 md:h-60">
+    <Card
+      className="shadow-md shadow-gray-400 md:h-60"
+      data-aos="fade-left"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-sine"
+    >
       <CardContent>
         <Typography
           className="uppercase font-bold text-lg text-green-main "

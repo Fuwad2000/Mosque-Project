@@ -26,9 +26,11 @@ export default function RootLayout({
       </head>
 
       <body className={inter.className}>
-        <NavBar />
-        <main>{children}</main>
-        <Footer />
+        <div className="bg-general bg-cover">
+          <NavBar />
+          <main>{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

@@ -24,7 +24,7 @@ const NavBarDrawer = ({ isDrawerOpen, handleButtonClick }: Props) => {
       open={isDrawerOpen}
       anchor="right"
       sx={{ p: 2 }}
-      className="lg:hidden"
+      className="xl:hidden"
     >
       <Box className="w-screen">
         <Header

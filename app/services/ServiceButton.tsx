@@ -1,6 +1,8 @@
 "use client";
+import React, { useEffect } from "react";
 import { Button } from "@mui/material";
-import React from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 interface Props {
   getTitle: String;
   index: number;
@@ -13,8 +15,11 @@ const ServiceButton = ({
   dropDownState,
   handleClickEvent,
 }: Props) => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <div>
+    <div data-aos-duration="1000" data-aos-easing="linear">
       <Button
         color="success"
         sx={{

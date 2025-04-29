@@ -10,6 +10,6 @@
 }
 .appearBoxes {
   animation: appear 3s linear;
-  animation-timeline: view();
+
   animation-range: entry 0% cover;
 }
