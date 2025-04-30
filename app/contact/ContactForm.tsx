@@ -53,7 +53,7 @@ const ContactForm = () => {
   };
   useEffect(() => {
     setIsLoaded(true);
-  });
+  }, []);
 
   if (!isLoaded) {
     return (

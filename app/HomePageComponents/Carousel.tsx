@@ -28,7 +28,7 @@ const Carousel = ({
     if (!autoSlide) return;
     const slideInterval = setInterval(next, autoSlideInterval);
     return () => clearInterval(slideInterval);
-  }, [curr, autoSlide, autoSlideInterval]);
+  }, [autoSlide, autoSlideInterval]);
 
   return (
     <div className="overflow-hidden relative w-full">

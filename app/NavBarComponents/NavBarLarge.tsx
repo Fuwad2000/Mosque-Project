@@ -19,7 +19,6 @@ const NavBarLarge = () => {
               href={content.link}
             >
               {content.title}
-              {content.DropDownContent ? <ArrowDropDownIcon /> : null}
             </Button>
           );
         })}

@@ -49,30 +49,9 @@ const NavBarDrawer = ({ isDrawerOpen, handleButtonClick }: Props) => {
                 onClick={() => handleDropDownAction(index)}
               >
                 {content.title}
-                {content.DropDownContent ? (
-                  isDropDownOpen[index] ? (
-                    <ArrowDropUpIcon />
-                  ) : (
-                    <ArrowDropDownIcon />
-                  )
-                ) : null}
               </Button>
 
-              <div>
-                {content.DropDownContent && isDropDownOpen[index]
-                  ? content.DropDownContent.map((dropContent, index) => (
-                      <div key={index} className="px-6 py-2">
-                        <Link
-                          href={content.Link ? content.Link[index] : "#"}
-                          className="text-gray-500 text-sm w-full border-solid hover:text-green-900"
-                        >
-                          {isDropDownOpen ? dropContent : ""}
-                        </Link>
-                        <hr />
-                      </div>
-                    ))
-                  : null}
-              </div>
+              <div>{/* Removed DropDownContent mapping logic */}</div>
             </div>
           ))}
         </div>

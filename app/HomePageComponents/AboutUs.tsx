@@ -89,7 +89,7 @@ const AboutUs = () => {
                     }}
                   >
                     All our objectives and activities are carried out in
-                    accordance with the teachings of the Qur'an and the
+                    accordance with the teachings of the Qur&apos;an and the
                     traditions of Prophet Muhammad (peace be upon him).
                   </Typography>
                 </Box>
